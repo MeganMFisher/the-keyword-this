@@ -23,6 +23,7 @@ What are the four rules that govern what the 'this keyword' is bound to and desc
         1. invokation  2. this keyword inside the function 3. something left of the dot
 
     
+    OBJECT.ASSIGN = Object.assign({}, dog) //copy right onto left or copy dog onto new object. 
 
     *EXPLICIT 
 
@@ -30,6 +31,7 @@ What are the four rules that govern what the 'this keyword' is bound to and desc
 
     *NEW 
 
+    Constructor Function = completely break without 'new' keyword. Anytime a function starts with a capital letter it should have the 'new' keyword and is a constructor function. It is a convention that is not enforced but is an industry standard convention.
 
 
 
