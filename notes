@@ -26,18 +26,19 @@ What are the four rules that govern what the 'this keyword' is bound to and desc
     OBJECT.ASSIGN = Object.assign({}, dog) //copy right onto left or copy dog onto new object. 
 
     *EXPLICIT 
+        call/bind/apply
+
+        .bind //  example.bind(example) bound together in a new copy that can't come apart. 
+
+        .call // example.call({arr: [num, num2, num3]}, 3, 5) arguments start at position one instead of position 0. Off by one because our var first parameter is context what we want the this to be. 
+
+        .apply // example.apply({arr: [num, num2, num3]}, [3, 5])
 
     *DEFAULT 
+        window
 
     *NEW 
 
     Constructor Function = completely break without 'new' keyword. Anytime a function starts with a capital letter it should have the 'new' keyword and is a constructor function. It is a convention that is not enforced but is an industry standard convention.
-
-
-
-What is the difference between call and apply?
-
-
-What does .bind do?
 
 

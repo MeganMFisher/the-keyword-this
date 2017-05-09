@@ -73,11 +73,8 @@ var getYear = function(){
 
 //Note(no tests)
 
-
-  
-  // prius.getYear.bind(Car)()
-  // mustang.getYear.bind(Car)()
-
+getYear.call(prius)
+getYear.call(mustang)
 
 //New Problem
 
