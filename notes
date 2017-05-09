@@ -1,0 +1,41 @@
+// THIS  - what is going to be our context object. 
+
+Context: the information around how a function was invoked. Where did I come from?
+   obj.x() | x() | x.call({}) | func(fn) { fun() } | func(x)
+
+What is the purpose of the 'this keyword'?
+    the value of this is determined by how a function is called. You can use it when there are multiple objects in the same function
+
+What are the four rules that govern what the 'this keyword' is bound to and describe each?
+
+        Implicit
+        Explicit
+        default
+        new 
+        
+    Javascript checks for explicit, new, implicit, then default(window) in that order.
+    Generally implicit is used. Don't use default(window)
+
+    *IMPLICIT: We look what is left of the dot at invokation. 
+    IMPLIED CONTEXT: Context is inferred to be the object left of the dot when the function is invoked, not when it is defined. 
+
+    What three things do you need for implicit to work?
+        1. invokation  2. this keyword inside the function 3. something left of the dot
+
+    
+
+    *EXPLICIT 
+
+    *DEFAULT 
+
+    *NEW 
+
+
+
+
+What is the difference between call and apply?
+
+
+What does .bind do?
+
+
