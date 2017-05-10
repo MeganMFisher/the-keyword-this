@@ -25,14 +25,16 @@ What are the four rules that govern what the 'this keyword' is bound to and desc
     
     OBJECT.ASSIGN = Object.assign({}, dog) //copy right onto left or copy dog onto new object. 
 
-    *EXPLICIT 
+    *EXPLICIT: Usually only used because you broke the function. There was no left of the dot and its complicated or you couldn't use left of the dot so it still can work using .call, .apply. Explicit always wins. if there is an implict option it will be overwritten by the explicit option. 
         call/bind/apply
 
         .bind //  example.bind(example) bound together in a new copy that can't come apart. 
 
-        .call // example.call({arr: [num, num2, num3]}, 3, 5) arguments start at position one instead of position 0. Off by one because our var first parameter is context what we want the this to be. 
+        .call // example.call({thisArr: [num, num2, num3]}, 3, 5) arguments start at position one instead of position 0. Off by one because our var first parameter is context what we want the this to be. 
 
-        .apply // example.apply({arr: [num, num2, num3]}, [3, 5])
+        .apply // example.apply({thisArr: [num, num2, num3]}, [3, 5])
+
+        .call vs .apply when there are no parameters there is no difference.  
 
     *DEFAULT 
         window
